@@ -128,4 +128,4 @@ A fixed random seed (`RANDOM_STATE = 42` in `src/config.py`) is used for data ge
 
 ## 11. Author
 
-VICTOR APAMO. Licensed under the MIT License.
+VICTOR APAMO. 
