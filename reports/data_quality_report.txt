@@ -1,0 +1,22 @@
+DATA QUALITY REPORT
+============================================================
+Rows: 5025 | Columns: 13
+
+Missing values:
+  - annual_income: 154 (3.1%)
+  - employment_years: 200 (4.0%)
+  Decision: impute with the median inside the modelling pipeline.
+
+Exact duplicate rows: 25  -> removed
+
+Business-rule violations:
+  - age below 18: 0
+  - credit_score outside 300-850: 0
+  - non-positive annual_income: 0
+  - employment_years greater than age - 16: 0
+  - debt_to_income outside 0-1: 0
+
+Default rate (target balance): 16.3%
+  Decision: classes are imbalanced, so judge models by ROC-AUC/PR-AUC (not accuracy) and tune the decision threshold to business cost.
+
+Rows after cleaning: 5000

@@ -1,0 +1,22 @@
+{
+  "best_model": "Logistic Regression",
+  "test_roc_auc": 0.7893,
+  "test_pr_auc": 0.432,
+  "baseline_default_rate": 0.163,
+  "baseline_cost_approve_everyone": 815.0,
+  "at_default_threshold_0.5": {
+    "threshold": 0.5,
+    "precision": 0.5581,
+    "recall": 0.1472,
+    "total_cost": 714.0
+  },
+  "at_cost_based_threshold": {
+    "threshold": 0.2,
+    "precision": 0.3518,
+    "recall": 0.6626,
+    "total_cost": 474.0
+  },
+  "cost_assumption": "FN = 5, FP = 1",
+  "n_train": 4000,
+  "n_test": 1000
+}
